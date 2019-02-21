@@ -1,0 +1,25 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  var a = 15
+  var b = 20
+  var c = -12
+  var x = generalp (a,b,c);
+  var xy = generaln (a,b,c);
+  console.log(x,xy)
+}
+
+function generalp(a,b,c) {
+  var x1
+  x1 = ((-b) +sqrt((b * b) - (4*a * c))/(2*a));
+  return x1
+
+}
+function generaln(a,b,c){
+var x2
+x2 = (-(b) -sqrt((b * b) - (4*a * c))/(2*a));
+  return x2
+}
